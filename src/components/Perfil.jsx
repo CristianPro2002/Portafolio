@@ -5,10 +5,14 @@ import imgReact from "../assets/img/iconos/react.png";
 import imgAngular from "../assets/img/iconos/angular.png";
 import imgNodejs from "../assets/img/iconos/nodejs.png";
 import imgDjango from "../assets/img/iconos/django.png";
+import imgFlask from "../assets/img/iconos/flask.png";
 import imgGit from "../assets/img/iconos/git.png";
 import imgStrapi from "../assets/img/iconos/strapi.png";
 import imgMysql from "../assets/img/iconos/mysql.png";
 import imgPostgresql from "../assets/img/iconos/postgresql.png";
+import imgCss from "../assets/img/iconos/css.png";
+import imgStyledComponents from "../assets/img/iconos/styledComponents.png";
+import imgTailwindcss from "../assets/img/iconos/tailwindcss.png";
 import "../styles/perfil.css";
 
 export default function Perfil() {
@@ -27,17 +31,20 @@ export default function Perfil() {
         </p>
         <p>Estas son las tecnologias que manejo actualmente: </p>
         <div className="content-tecno">
-          <img src={imgHtml} alt="logo html" title="Html" />
-          <img src={imgJavascript} alt="logo javascript" title="Javascript" />
-          <img src={imgPython} alt="logo python" title="Python" />
-          <img src={imgReact} alt="logo react" title="React" />
-          <img src={imgAngular} alt="logo angular" title="Angular" />
-          <img src={imgNodejs} alt="logo nodejs" title="Node js" />
-          <img
-            src={imgDjango}
-            alt="logo django"
-            title="Django y Django rest framework"
-          />
+          <div>
+            <img src={imgHtml} alt="logo html" title="Html" />
+            <img src={imgJavascript} alt="logo javascript" title="Javascript" />
+            <img src={imgPython} alt="logo python" title="Python" />
+            <img src={imgReact} alt="logo react" title="React" />
+            <img src={imgAngular} alt="logo angular" title="Angular" />
+            <img src={imgNodejs} alt="logo nodejs" title="Node js" />
+            <img
+              src={imgDjango}
+              alt="logo django"
+              title="Django y Django rest framework"
+            />
+            <img src={imgFlask} alt="logo flask" title="Flask" />
+          </div>
           <details>
             <summary>Ver mas</summary>
             <img
@@ -52,9 +59,20 @@ export default function Perfil() {
               title="Strapi"
               className="img-strapi"
             />
-          <img src={imgMysql} alt="logo mysql" title="MySql" />
-          <img src={imgPostgresql} alt="logo postgresql" title="PostgreSql" />
-
+            <img src={imgMysql} alt="logo mysql" title="MySql" />
+            <img src={imgPostgresql} alt="logo postgresql" title="PostgreSql" />
+            <img src={imgCss} alt="logo css" title="Css" />
+            <img
+              src={imgStyledComponents}
+              alt="logo styled-components"
+              title="Styled components"
+            />
+            <img
+              src={imgTailwindcss}
+              alt="logo tailwind css"
+              title="Tailwind css"
+              className="img-tailwind"
+            />
           </details>
         </div>
       </div>

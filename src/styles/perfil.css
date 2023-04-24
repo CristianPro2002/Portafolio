@@ -16,6 +16,13 @@
     text-align: center;
 }
 
+.content-tecno {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .content-tecno img {
     width: 30px;
     height: 30px;
@@ -30,6 +37,12 @@
 
 .content-tecno .img-strapi {
     width: 75px;
+    height: 30px;
+    margin: 0.5rem;
+}
+
+.content-tecno .img-tailwind {
+    width: 90px;
     height: 30px;
     margin: 0.5rem;
 }
