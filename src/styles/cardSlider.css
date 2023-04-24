@@ -1,0 +1,106 @@
+.card1 {
+    background-image: url(../assets/img/Projects/JesucristoReina.JPG);
+}
+
+.card1:hover {
+    transition: .5s ease-in-out all;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.8)
+      ),
+      url(../assets/img/Projects/JesucristoReina.JPG);
+
+}
+
+.card2 {
+    background-image: url(../assets/img/Projects/ControlGastos.JPG);
+}
+
+.card2:hover {
+    transition: .5s ease-in-out all;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.9)
+      ),
+      url(../assets/img/Projects/ControlGastos.JPG);
+
+}
+
+.card3 {
+    background-image: url(../assets/img/Projects/ControlCitas.JPG);
+}
+
+.card3:hover {
+    transition: .5s ease-in-out all;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.9)
+      ),
+      url(../assets/img/Projects/ControlCitas.JPG);
+
+}
+
+.card4 {
+    background-image: url(../assets/img/Projects/CotizadoCripto.JPG);
+}
+
+.card4:hover {
+    transition: .5s ease-in-out all;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.9)
+      ),
+      url(../assets/img/Projects/CotizadoCripto.JPG);
+
+}
+
+.content-sliderCard:hover .content-infoSlide {
+    visibility: visible;
+    opacity: 1;
+    transition: .5s ease-in-out all;
+}
+
+.content-infoSlide {
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s ease-in-out all;
+ 
+}
+
+.content-infoSlide h3 {
+    text-align: center;
+}
+
+.content-infoSlide div {
+    text-align: center;
+}
+
+.content-infoSlide div a {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-five);
+}
+
+.content-imgCards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: var(--color-secondary);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.content-imgCards img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.img-tailwindcssCard {
+    width: 80px !important;
+    border-radius: 10px !important;
+}
