@@ -1,5 +1,6 @@
 import React from "react";
 import { effectView } from "../utils/interception";
+import "../styles/carousel.css";
 
 export default function Carousel() {
 

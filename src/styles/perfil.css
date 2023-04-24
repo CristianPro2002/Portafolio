@@ -1,0 +1,35 @@
+.content-dataPj {
+    padding: 1rem;
+    color: var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.content-dataPj h1 {
+    text-align: center;
+}
+
+.content-dataPj p {
+    text-align: center;
+}
+
+.content-tecno img {
+    width: 30px;
+    height: 30px;
+    margin: 0.5rem;
+}
+
+.content-tecno .img-git {
+    width: 60px;
+    height: 30px;
+    margin: 0.5rem;
+}
+
+.content-tecno .img-strapi {
+    width: 75px;
+    height: 30px;
+    margin: 0.5rem;
+}

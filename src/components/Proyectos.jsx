@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from "./Carousel";
 import Slider from "./Slider";
+import "../styles/proyectos.css";
 
 export default function Proyectos() {
   return (

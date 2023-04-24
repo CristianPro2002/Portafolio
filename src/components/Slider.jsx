@@ -2,8 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Thumbs } from "swiper";
 import { effectView } from "../utils/interception";
-import { calculateWidth } from "../utils/calculateWidth";
-import useScreenSize from "../utils/useScreenSize";
+import "../styles/slider.css";
 
 export default function Slider() {
   const [responsive, setResponsive] = React.useState(2);
