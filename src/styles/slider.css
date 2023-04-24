@@ -1,0 +1,39 @@
+
+.mySwiper .swiper-button-prev {
+    left: 30;
+    color: var(--color-primary);
+}
+
+.mySwiper .swiper-button-next {
+    right: 30;
+    color: var(--color-primary);
+}
+
+.content-sliderCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--color-fourth);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    transform: scale(0.9);
+    opacity: 0;
+    transition: .7s ease-in-out all;
+    width: 80%;
+    height: 250px;
+    color: var(--color-secondary);
+}
+
+.content-sliderCard:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: .7s ease-in-out all;
+}
+
+/* Efectos */
+
+.effectview {
+    opacity: 1;
+    transform: scale(1);
+  }

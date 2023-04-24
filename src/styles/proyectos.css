@@ -1,0 +1,54 @@
+.content-cardsProyects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/***** Parallax *****/
+
+.bgimg-2 {
+    position: relative;
+    background-attachment:fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .bgimg-2 {
+    background-image: url(../assets/img/background.jpg);
+    min-height: 150vh;
+  }
+  
+  .bg-banner {
+    background-color: var(--color-secondary);
+    height: 50vh;
+    padding: 0 2rem;
+    padding-top: 2rem;
+  }
+  
+  .bg-banner2 { 
+    background-color: var(--color-secondary);
+    height: 50vh;
+    padding: 0 2rem;
+    padding-top: 2rem;
+  }
+
+/***** *****/
+
+@media (max-width: 768px) {
+  .content-cardsProyects {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .bgimg-2 {
+    min-height: 250vh;
+  }
+
+  .bg-banner2 {
+    height: auto;
+    min-height: 50vh;
+  }
+}
