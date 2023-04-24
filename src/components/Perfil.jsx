@@ -1,3 +1,4 @@
+import { useState } from "react";
 import imgHtml from "../assets/img/iconos/html.png";
 import imgJavascript from "../assets/img/iconos/javascript.png";
 import imgPython from "../assets/img/iconos/python.png";
@@ -16,6 +17,8 @@ import imgTailwindcss from "../assets/img/iconos/tailwindcss.png";
 import "../styles/perfil.css";
 
 export default function Perfil() {
+  const [vermas, setVermas] = useState(false);
+
   return (
     <div style={{ height: "100vh" }}>
       <div className="content-dataPj">
@@ -31,49 +34,107 @@ export default function Perfil() {
         </p>
         <p>Estas son las tecnologias que manejo actualmente: </p>
         <div className="content-tecno">
-          <div>
-            <img src={imgHtml} alt="logo html" title="Html" />
-            <img src={imgJavascript} alt="logo javascript" title="Javascript" />
-            <img src={imgPython} alt="logo python" title="Python" />
-            <img src={imgReact} alt="logo react" title="React" />
-            <img src={imgAngular} alt="logo angular" title="Angular" />
-            <img src={imgNodejs} alt="logo nodejs" title="Node js" />
-            <img
-              src={imgDjango}
-              alt="logo django"
-              title="Django y Django rest framework"
-            />
-            <img src={imgFlask} alt="logo flask" title="Flask" />
+          <div className="content-gridtecno">
+            <div>
+              <img src={imgHtml} alt="logo html" title="Html" />
+              <span>Html</span>
+            </div>
+            <div>
+              <img
+                src={imgJavascript}
+                alt="logo javascript"
+                title="Javascript"
+              />
+              <span>Javascript</span>
+            </div>
+            <div>
+              <img src={imgPython} alt="logo python" title="Python" />
+              <span>Python</span>
+            </div>
+            <div>
+              <img src={imgReact} alt="logo react" title="React" />
+              <span>React</span>
+            </div>
+            <div>
+              <img src={imgAngular} alt="logo angular" title="Angular" />
+              <span>Angular</span>
+            </div>
+            <div>
+              <img src={imgNodejs} alt="logo nodejs" title="Node js" />
+              <span>Nodejs</span>
+            </div>
+            <div>
+              <img
+                src={imgDjango}
+                alt="logo django"
+                title="Django y Django rest framework"
+              />
+              <span>Django</span>
+            </div>
+            <div>
+              <img src={imgFlask} alt="logo flask" title="Flask" />
+              <span>Flask</span>
+            </div>
           </div>
-          <details>
-            <summary>Ver mas</summary>
-            <img
-              src={imgGit}
-              alt="logo git"
-              title="Git, Github, Bitbucket"
-              className="img-git"
-            />
-            <img
-              src={imgStrapi}
-              alt="logo strapi"
-              title="Strapi"
-              className="img-strapi"
-            />
-            <img src={imgMysql} alt="logo mysql" title="MySql" />
-            <img src={imgPostgresql} alt="logo postgresql" title="PostgreSql" />
-            <img src={imgCss} alt="logo css" title="Css" />
-            <img
-              src={imgStyledComponents}
-              alt="logo styled-components"
-              title="Styled components"
-            />
-            <img
-              src={imgTailwindcss}
-              alt="logo tailwind css"
-              title="Tailwind css"
-              className="img-tailwind"
-            />
-          </details>
+          <button onClick={() => setVermas(!vermas)} className="btn-vermas">
+            Ver más
+          </button>
+          <div className={!vermas ? "hiddenVermas" : ""}>
+            <div className="content-gridtecno__Vermas">
+              <div>
+                <img
+                  src={imgGit}
+                  alt="logo git"
+                  title="Git, Github, Bitbucket"
+                  className="img-git"
+                />
+                <span>Git</span>
+              </div>
+              <div>
+                <img
+                  src={imgStrapi}
+                  alt="logo strapi"
+                  title="Strapi"
+                  className="img-strapi"
+                />
+                <span>Strapi</span>
+              </div>
+              <div>
+                <img src={imgMysql} alt="logo mysql" title="MySql" />
+                <span>MySql</span>
+              </div>
+              <div>
+                <img
+                  src={imgPostgresql}
+                  alt="logo postgresql"
+                  title="PostgreSql"
+                />
+                <span>PosgreSQL</span>
+              </div>
+
+              <div>
+                <img src={imgCss} alt="logo css" title="Css" />
+                <span>Css</span>
+              </div>
+              <div>
+                <img
+                  src={imgStyledComponents}
+                  alt="logo styled-components"
+                  title="Styled components"
+                />
+                <span>Styled Components</span>
+              </div>
+              <div>
+                <img
+                  src={imgTailwindcss}
+                  alt="logo tailwind css"
+                  title="Tailwind css"
+                  className="img-tailwind"
+                />
+                <span>Tailwind Css</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

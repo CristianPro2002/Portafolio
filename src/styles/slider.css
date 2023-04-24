@@ -25,6 +25,12 @@
     height: 250px;
     color: var(--color-secondary);
 }
+#efectoPrueba1 {
+    background-image: url(../assets/img/Projects/JesucristoReina.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 .content-sliderCard:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
