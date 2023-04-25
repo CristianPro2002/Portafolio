@@ -1,5 +1,5 @@
 import React from "react";
-import Contacto from "../components/Contacto";
+import Contacto from "../components/contacto";
 import Proyectos from "../components/Proyectos";
 import Perfil from "../components/Perfil";
 import logoPerfil from "../assets/img/perfil.jpg";
