@@ -58,7 +58,43 @@
 
 }
 
+.cardAcademy1 {
+    background-image: url(../assets/img/Projects/SimuladorBancario.JPG);
+}
+
+.cardAcademy1:hover {
+    transition: .5s ease-in-out all;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.9)
+      ),
+      url(../assets/img/Projects/SimuladorBancario.JPG);
+
+}
+
+.cardAcademy2 {
+    background-image: url(../assets/img/Projects/Pokedex.JPG);
+}
+
+.cardAcademy2:hover {
+    transition: .5s ease-in-out all;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.9)
+      ),
+      url(../assets/img/Projects/Pokedex.JPG);
+
+}
+
 .content-sliderCard:hover .content-infoSlide {
+    visibility: visible;
+    opacity: 1;
+    transition: .5s ease-in-out all;
+}
+
+.content-generalCard:hover .content-infoSlide {
     visibility: visible;
     opacity: 1;
     transition: .5s ease-in-out all;
@@ -97,7 +133,6 @@
 .content-imgCards img {
     width: 30px;
     height: 30px;
-    border-radius: 50%;
 }
 
 .img-tailwindcssCard {

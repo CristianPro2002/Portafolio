@@ -30,6 +30,25 @@
     transition: .5s ease-in-out all;
 }
 
+@media (max-width: 650px) {
+
+    .mySwiper .swiper-button-prev {
+        left: 0;
+        transform: translateX(-10%);
+    }
+
+    .mySwiper .swiper-button-next {
+        right: 0;
+        transform: translateX(10%);
+    }
+
+    .content-sliderCard {
+        width: 70%;
+        height: 200px;
+        overflow-y: scroll;
+    }
+}
+
 
 /* Efectos */
 

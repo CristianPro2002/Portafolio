@@ -77,7 +77,7 @@ export default function Perfil() {
             </div>
           </div>
           <button onClick={() => setVermas(!vermas)} className="btn-vermas">
-            Ver más
+            {!vermas ? "Ver mas" : "Ver menos"}
           </button>
           <div className={!vermas ? "hiddenVermas" : ""}>
             <div className="content-gridtecno__Vermas">

@@ -110,6 +110,7 @@ export default function Slider() {
     description: "Proyecto para cotizar criptomonedas",
     url: "https://crypto-monedas.netlify.app/",
     urlname: "crypto-monedas.netlify.app",
+    state: "Terminado",
   }
 
   return (

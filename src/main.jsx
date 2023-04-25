@@ -4,6 +4,7 @@ import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Layout from './components/Layout'
 import Index from './pages/Index'
+import Copyrigth from './pages/copyrigth'
 import ErrorPage from './components/ErrorPage'
 
 const router = createBrowserRouter([
@@ -14,6 +15,11 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Index />,
+        errorElement: <ErrorPage />
+      },
+      {
+        path: '/copyrigth',
+        element: <Copyrigth />,
         errorElement: <ErrorPage />
       }
     ]
