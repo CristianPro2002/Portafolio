@@ -1,5 +1,5 @@
 import React from "react";
-import Contacto from "../components/contacto";
+import Contacto from "../components/Contacto";
 import Proyectos from "../components/Proyectos";
 import Perfil from "../components/Perfil";
 import logoPerfil from "../assets/img/perfil.jpg";
@@ -34,7 +34,7 @@ export default function Index() {
       </div>
       <Perfil />
       <Proyectos />
-      <div style={{ minHeight: "100vh" }}>
+      <div style={{ minHeight: "100vh", marginTop: "10%" }}>
         <Contacto />
       </div>
     </div>

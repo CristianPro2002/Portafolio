@@ -58,7 +58,7 @@ export default function Header({ scroll, menuMobile, setMenuMobile }) {
                 to="proyectos"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={-100}
                 duration={500}
                 onClick={menuOff}
               >
@@ -79,7 +79,7 @@ export default function Header({ scroll, menuMobile, setMenuMobile }) {
                 to="contacto"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={-150}
                 duration={500}
                 onClick={menuOff}
               >
