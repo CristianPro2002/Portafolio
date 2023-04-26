@@ -1,14 +1,6 @@
 export default function Copyrigth() {
   return (
     <div style={{paddingTop: "200px", color: "var(--color-secondary)"}}>
-      Imagen de{" "}
-      <a href="https://pixabay.com/es/users/stocksnap-894430/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=924920">
-        StockSnap
-      </a>{" "}
-      en{" "}
-      <a href="https://pixabay.com/es//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=924920">
-        Pixabay
-      </a>
       <br />
       Imagen de{" "}
       <a href="https://pixabay.com/es/users/boskampi-3788146/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1873854">
