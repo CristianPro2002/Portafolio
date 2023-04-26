@@ -41,6 +41,10 @@
     border: 2px solid var(--color-five);
 }
 
+.content-contacto .content-infoUser div textarea {
+    resize: vertical;
+}
+
 .content-contacto .content-infoUser div label {
     color: var(--color-five);
     font-weight: bold;
