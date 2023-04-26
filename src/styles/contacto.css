@@ -8,6 +8,10 @@
     margin-bottom: 10%;
 }
 
+.content-paddintop {
+    padding-top: 8%;
+}
+
 .content-contacto h2 {
     color: var(--color-five);
     font-weight: bold;
@@ -76,9 +80,18 @@
         margin: 0;
     }
 
+    .content-paddintop {
+        padding-top: 0;
+    }
+
     .content-contacto form {
         width: 80%;
     }
     
 }
 
+@media (max-width: 400px) {
+    .content-contacto{
+        padding-bottom: 20%;
+    }
+}

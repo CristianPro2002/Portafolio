@@ -1,42 +1,42 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import "../styles/contacto.css";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
+import Spinner from "./Spinner";
 
 export default function Contacto() {
+  const [spinner, setSpinner] = useState(false);
+
   const form = useRef();
+  const service_id = import.meta.env.VITE_SERVICE_ID;
+  const template_id = import.meta.env.VITE_TEMPLATE_ID;
+  const public_key = import.meta.env.VITE_PUBLIC_KEY;
 
   const sendEmail = (e) => {
+    setSpinner(true);
     e.preventDefault();
 
-    const service_id = import.meta.env.VITE_SERVICE_ID;
-    const template_id = import.meta.env.VITE_TEMPLATE_ID;
-    const public_key = import.meta.env.VITE_PUBLIC_KEY;
-
-    emailjs
-      .sendForm(
-        service_id,
-        template_id,
-        form.current,
-        public_key
-      )
-      .then(
-        (result) => {
-          console.log(result);
-          toast.success("Mensaje enviado correctamente!");
-        },
-        (error) => {
-          console.log(error);
-          toast.error("Error al enviar el mensaje!");
-        }
-      );
+    emailjs.sendForm(service_id, template_id, form.current, public_key).then(
+      (result) => {
+        setSpinner(false);
+        toast.success("Mensaje enviado correctamente!");
+      },
+      (error) => {
+        setSpinner(false);
+        toast.error("Error al enviar el mensaje!");
+      }
+    );
 
     form.current.reset();
   };
 
   return (
     <div id="contacto">
-      <div className="content-contacto">
+      <div
+        className={
+          spinner ? "content-contacto content-paddintop" : "content-contacto"
+        }
+      >
         <h2>Contactame!</h2>
         <form ref={form} onSubmit={sendEmail}>
           <div className="content-infoUser">
@@ -56,6 +56,13 @@ export default function Contacto() {
               <label>Telefono</label>
               <input type="number" name="user_phone" />
             </div>
+          </div>
+          <div>
+            {spinner ? (
+              <>
+                <Spinner />
+              </>
+            ) : null}
           </div>
           <div className="content-buttonUser">
             <button type="submit">Enviar</button>

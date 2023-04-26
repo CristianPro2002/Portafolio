@@ -15,9 +15,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-  
-  .bgimg-2 {
     background-image: url(../assets/img/background.jpg);
     min-height: 150vh;
   }
@@ -32,8 +29,7 @@
   .bg-banner2 { 
     background-color: var(--color-secondary);
     height: 50vh;
-    padding: 0 2rem;
-    padding-top: 2rem;
+    padding: 2rem 2rem;
   }
 
 /***** *****/
