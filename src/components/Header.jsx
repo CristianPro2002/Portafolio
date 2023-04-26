@@ -79,7 +79,7 @@ export default function Header({ scroll, menuMobile, setMenuMobile }) {
                 to="contacto"
                 spy={true}
                 smooth={true}
-                offset={-150}
+                offset={-50}
                 duration={500}
                 onClick={menuOff}
               >

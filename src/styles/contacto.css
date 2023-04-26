@@ -4,6 +4,14 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    min-height: 100vh;
+    margin-bottom: 10%;
+}
+
+.content-contacto h2 {
+    color: var(--color-five);
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .content-contacto form {
@@ -21,15 +29,7 @@
     padding: 10px;
 }
 
-.content-contacto .content-infoUser div input {
-    padding: 10px;
-    border-radius: 5px;
-    width: 100%;
-    outline: none;
-    border: 2px solid var(--color-five);
-}
-
-.content-contacto .content-infoUser div textarea {
+.content-contacto .content-infoUser div input, .content-contacto .content-infoUser div textarea {
     padding: 10px;
     border-radius: 5px;
     width: 100%;
@@ -38,10 +38,12 @@
 }
 
 .content-contacto .content-infoUser div label {
-    margin-bottom: 5px;
     color: var(--color-five);
     font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 10px;
 }
+
 
 .content-contacto form .content-buttonUser {
     width: 100%;
@@ -69,6 +71,11 @@
 }
 
 @media (max-width: 768px) {
+
+    .content-contacto {
+        margin: 0;
+    }
+
     .content-contacto form {
         width: 80%;
     }

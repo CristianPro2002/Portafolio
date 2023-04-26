@@ -4,6 +4,7 @@ import { Outlet } from "react-router-dom";
 import "../styles/header.css";
 import "../styles/footer.css";
 import Footer from "./Footer";
+import { Toaster } from "react-hot-toast";
 
 export default function Layout() {
   //obtener scroll
@@ -26,11 +27,12 @@ export default function Layout() {
           menuMobile={menuMobile}
           setMenuMobile={setMenuMobile}
         />
-      <main>
-        <Outlet/>
-      </main>
+        <main>
+          <Outlet />
+        </main>
       </div>
       <Footer />
+      <Toaster position="top-right" reverseOrder={false} />
     </div>
   );
 }

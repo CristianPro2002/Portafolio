@@ -34,9 +34,7 @@ export default function Index() {
       </div>
       <Perfil />
       <Proyectos />
-      <div style={{ minHeight: "100vh", marginTop: "10%" }}>
         <Contacto />
-      </div>
     </div>
   );
 }
