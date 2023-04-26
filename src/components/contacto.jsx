@@ -9,12 +9,16 @@ export default function Contacto() {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    const service_id = import.meta.env.VITE_SERVICE_ID;
+    const template_id = import.meta.env.VITE_TEMPLATE_ID;
+    const public_key = import.meta.env.VITE_PUBLIC_KEY;
+
     emailjs
       .sendForm(
-        "service_a5iubid",
-        "template_1ogw125",
+        service_id,
+        template_id,
         form.current,
-        "7MIM-pU7BiIcdX34f"
+        public_key
       )
       .then(
         (result) => {

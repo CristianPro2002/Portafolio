@@ -3,12 +3,16 @@ import Contacto from "../components/contacto";
 import Proyectos from "../components/Proyectos";
 import Perfil from "../components/Perfil";
 import logoPerfil from "../assets/img/perfil.jpg";
+import cv from "../assets/files/CristianAndresCV.pdf"
 import "swiper/swiper.min.css";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
 
 export default function Index() {
   const dateNow = new Date();
+
+  const download = () => {};
+
   return (
     <div className="">
       <div className="bgimg-1" id="home">
@@ -16,11 +20,14 @@ export default function Index() {
           <div className="content-titleBg">
             <span>Cristian Castaño</span>
           </div>
-          <p>
+          <p className="content-dataPern">
             Soy un desarrollador junior apasionado por la programación, en
             constante aprendizaje y con ganas de seguir creciendo.
           </p>
-          <p>{dateNow.toLocaleDateString()}</p>
+          <div className="content-btnDownload">
+            <a href={cv}  download="CristianCV">Descargar CV</a>
+          </div>
+          <p className="content-dataDate">{dateNow.toLocaleDateString()}</p>
         </div>
         <div className="content-logoBg">
           <div className="content-logoPj">
@@ -34,7 +41,7 @@ export default function Index() {
       </div>
       <Perfil />
       <Proyectos />
-        <Contacto />
+      <Contacto />
     </div>
   );
 }

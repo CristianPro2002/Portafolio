@@ -80,6 +80,7 @@ body {
   padding: 0 2rem 2rem 2rem;
 }
 
+
 .title-bg span {
   display: block;
   font-size: 3rem;
@@ -106,10 +107,35 @@ body {
   }
 }
 
-.title-bg p {
+.content-dataPern {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0 2rem 0 2rem;
+}
+
+.content-dataDate {
   font-size: 1rem;
   margin: 0;
   padding: 0 2rem 2rem 2rem;
+}
+
+.title-bg .content-btnDownload {
+  width: 100%;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+.title-bg a {
+  padding: 2%;
+  text-decoration: none;
+  border-radius: 30px;
+  background-color: transparent;
+  color: var(--color-five);
+  cursor: pointer;
+} 
+
+.title-bg a:hover {
+  color: var(--color-secondary);
+  transition: 0.5s;
 }
 
 .content-logoBg {
