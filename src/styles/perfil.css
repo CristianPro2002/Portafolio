@@ -73,38 +73,28 @@
   margin: 0.5rem;
 }
 
-.content-gridtecno {
-  animation: moveLogoTecno 6s infinite;
+.icon {
+  width: 30px;
+  height: 30px;
+  margin: 0.5rem;
+  transition: all 0.3s ease;
 }
 
-.content-tecno img:hover {
-  animation: none;
-  transform: scale(1.2);
-}
-
-.content-gridtecno div:hover span {
+.content-gridtecno div:hover {
   color: var(--color-five);
+
+  .icon {
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+  }
 }
 
-.content-gridtecno__Vermas div:hover span {
+.content-gridtecno__Vermas div:hover {
   color: var(--color-five);
-}
 
-@keyframes moveLogoTecno {
-  0% {
-    transform: translateY(0);
-  }
-  25% {
-    transform: translateY(1px);
-  }
-  50% {
-    transform: translateY(-1px);
-  }
-  75% {
-    transform: translateY(1px);
-  }
-  100% {
-    transform: translateY(0);
+  .icon {
+    transform: scale(1.2);
+    transition: all 0.3s ease;
   }
 }
 
@@ -143,6 +133,12 @@
   transition: all 0.3s ease;
 }
 
+.visibleVermas {
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+
 .hiddenVermas {
-  display: none;
+  transition: all 0.3s ease;
+  opacity: 0;
 }

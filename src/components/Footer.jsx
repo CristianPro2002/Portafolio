@@ -1,26 +1,42 @@
+import {
+  AiFillGithub,
+  AiFillLinkedin,
+  AiOutlineWhatsApp,
+} from "react-icons/ai";
 
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="content-divFooter">
-
-      <div className="content-infoFooter">
-      </div>
+        <div className="content-infoFooter"></div>
       </div>
       <div className="content-dataFooter">
         <div className="content-dataGeneral">
-            <h4>Cristian Castaño</h4>
+          <h4>Software Developer</h4>
+          <p>Programador apasionado y dedicado a su trabajo</p>
         </div>
-        <div>
-            <h3></h3>
+        <div style={{textAlign: "center"}}>
+          <h4>Contacto</h4>
+          <div className="content-iconsFooter">
+            <a href="https://github.com/CristianPro2002" target="_blank" rel="noreferrer">
+              <AiFillGithub className="iconFooter" />
+            </a>
+            <a href="https://www.linkedin.com/in/cristian-andres-casta%C3%B1o-salas-580608221/" target="_blank" rel="noreferrer">
+              <AiFillLinkedin className="iconFooter" />
+            </a>
+            <a href="https://wa.me/+573172527140" target="_blank" rel="noreferrer">
+              <AiOutlineWhatsApp className="iconFooter" />
+            </a>
+          </div>
         </div>
-        <div>
-            <p>Todos los derechos reservados &copy; {new Date().getFullYear()}</p>
+        <div style={{textAlign: "center"}}>
+          <h4>Todos los derechos reservados &copy; {new Date().getFullYear()}</h4>
+          <p>Mi portafolio</p>
         </div>
       </div>
       <div>
-        <p>Desarrollado por Cristian Castaño</p>
+        <p className="developer">Desarrollado por Cristian Castaño</p>
       </div>
     </footer>
-  )
+  );
 }
