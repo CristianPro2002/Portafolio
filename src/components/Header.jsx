@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Link as Ruta } from "react-scroll";
+import Logo from "../../public/Logo.png";
 
 export default function Header({ scroll, menuMobile, setMenuMobile }) {
   const location = useLocation();
@@ -17,7 +18,7 @@ export default function Header({ scroll, menuMobile, setMenuMobile }) {
     >
       <div className="content-header">
         <Link to="/" className="header-link" onClick={menuOff}>
-          <h2>Mi Portafolio</h2>
+          <img src={Logo} alt="Logo" className="logo" />
         </Link>
         <nav
           className={

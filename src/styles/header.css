@@ -1,17 +1,16 @@
 .header {
   background-color: transparent;
-  padding: 2rem 1rem ;
+  padding: 1rem 1rem;
   position: fixed;
   width: 100%;
   z-index: 100;
   transition: all 0.5s ease;
-
 }
 
 .bg-active {
   background-color: var(--color-primary);
   transition: all 0.5s ease;
-  padding: 1rem 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .content-header {
@@ -27,6 +26,12 @@
 
 .header-link h2 {
   margin: 0;
+}
+
+.logo {
+  width: 80px;
+  height: 100%;
+  border-radius: 50%;
 }
 
 .content-header__navegacion {
@@ -75,7 +80,7 @@
 }
 
 .menuToggle::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 30px;
   height: 2px;
@@ -89,7 +94,7 @@
 }
 
 .menuToggle::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 30px;
   height: 2px;
@@ -105,7 +110,6 @@
 }
 
 @media (max-width: 768px) {
-
   .content-btn {
     display: flex;
     align-items: center;
@@ -136,7 +140,6 @@
   .animation-menu {
     transform: translateX(0);
     transition: all 0.5s ease;
-
   }
 }
 
@@ -145,7 +148,3 @@
     left: 80%;
   }
 }
-
-
-
-

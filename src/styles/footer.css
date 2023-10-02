@@ -55,6 +55,12 @@
   margin-top: 10px;
 }
 
+.logoFooter {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
 @media (max-width: 768px) {
   .content-dataFooter {
     grid-template-columns: repeat(1, 1fr);
