@@ -58,6 +58,21 @@
 
 }
 
+.card5 {
+    background-image: url(../assets/img/Projects/RedSocial.jpg);
+}
+
+.card5:hover {
+    transition: .5s ease-in-out all;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.9)
+      ),
+      url(../assets/img/Projects/RedSocial.JPG);
+
+}
+
 .cardAcademy1 {
     background-image: url(../assets/img/Projects/SimuladorBancario.JPG);
 }

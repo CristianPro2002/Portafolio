@@ -9,6 +9,7 @@ import imgPostgresql from "../assets/img/iconos/postgresql.png";
 import imgTailwindcss from "../assets/img/iconos/tailwindcss.png";
 import imgStyledComponents from "../assets/img/iconos/styledComponents.png";
 import imgCss from "../assets/img/iconos/css.png";
+import materialUI from "../assets/img/iconos/materialUI.png";
 import { effectView } from "../utils/interception";
 import "../styles/slider.css";
 
@@ -113,6 +114,26 @@ export default function Slider() {
     state: "Terminado",
   }
 
+  
+  const imagenesCard5 = [
+    {
+      name: "React",
+      imgRute: imgReact,
+    },
+    {
+      name: "Material-ui",
+      imgRute: materialUI,
+    }
+  ]
+
+  const dataCard5 = {
+    name: "Red Social",
+    description: "Proyecto de una red social",
+    url: "https://redsocialfrontend.onrender.com/",
+    urlname: "redsocialfrontend.onrender.com",
+    state: "En construcción...",
+  }
+
   return (
     <Swiper
       loop={true}
@@ -149,6 +170,13 @@ export default function Slider() {
         <div style={{ display: "flex", justifyContent: "center" }}>
           <div className="content-sliderCard card4" id="efectoPrueba4">
             <CardSlider imagenes={imagenesCard4} data={dataCard4} />
+          </div>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <div className="content-sliderCard card5" id="efectoPrueba5">
+            <CardSlider imagenes={imagenesCard5} data={dataCard5} />
           </div>
         </div>
       </SwiperSlide>

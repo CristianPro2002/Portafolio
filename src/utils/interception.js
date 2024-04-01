@@ -34,4 +34,5 @@ export const effectView = () => {
     observador.observe(elemento('efectoPrueba2'));
     observador.observe(elemento('efectoPrueba3'));
     observador.observe(elemento('efectoPrueba4'));
+    observador.observe(elemento('efectoPrueba5'));
 }
